@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Louis Marchall"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-19 08:13:32 PM"/>
+        <attribute name="created" value="TG91aXMgTWFyY2hhbGw7TEFQVE9QLTczNzM4NTg7MjAyMy0wMi0xOTswODowODoyOSBQTTszNTM2"/>
+        <attribute name="edited" value="TG91aXMgTWFyY2hhbGw7TEFQVE9QLTczNzM4NTg7MjAyMy0wMi0xOTswODoxMzozMiBQTTsxOzM2MzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nilai1, Nilai2, Nilai3" type="Integer" array="False" size=""/>
+            <input variable="Nilai1"/>
+            <input variable="Nilai2"/>
+            <input variable="Nilai3"/>
+            <if expression="nilai1&gt;nilai2">
+                <then>
+                    <if expression="nilai1&gt;nilai3">
+                        <then>
+                            <output expression="nilai1&amp;&quot;AngkaTerbesar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="nilai3&amp;&quot;AngkaTerbesar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="nilai2&gt;nilai3">
+                        <then>
+                            <output expression="nilai2&amp;&quot;AngkaTerbesar&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="nilai3&amp;&quot;AngkaTerbesar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

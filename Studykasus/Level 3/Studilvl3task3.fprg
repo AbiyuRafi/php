@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dikae"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 02:50:51 PM"/>
+        <attribute name="created" value="ZGlrYWU7SFAtMTQ7MjAyMy0wMi0yMjswMjozOToyMSBQTTsyMDgy"/>
+        <attribute name="edited" value="ZGlrYWU7SFAtMTQ7MjAyMy0wMi0yMjswMjo1MDo1MSBQTTsxOzIxODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sisi1, sisi2, sisi3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan sisi ke-1: &quot;" newline="True"/>
+            <input variable="sisi1"/>
+            <output expression="&quot;Masukkan sisi ke-2: &quot;" newline="True"/>
+            <input variable="sisi2"/>
+            <output expression="&quot;Masukkan sisi ke-3: &quot;" newline="True"/>
+            <input variable="sisi3"/>
+            <if expression="sisi1 == sisi2 &amp;&amp; sisi1 == sisi3">
+                <then>
+                    <output expression="&quot;SEGITIGA SAMA SISI&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sisi1 == sisi2 || sisi1 == sisi3 || sisi2 == sisi3">
+                        <then>
+                            <output expression="&quot;SEGITIGA SAMA KAKI&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;SEGITIGA SEMBARANG&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

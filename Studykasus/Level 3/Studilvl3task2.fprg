@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dikae"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 03:16:16 PM"/>
+        <attribute name="created" value="ZGlrYWU7SFAtMTQ7MjAyMy0wMi0yMjswMzowNDoxMSBQTTsyMDc0"/>
+        <attribute name="edited" value="ZGlrYWU7SFAtMTQ7MjAyMy0wMi0yMjswMzoxNjoxNiBQTTsxOzIxOTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil1, bil2, bil3, mid" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan bil ke-1: &quot;" newline="True"/>
+            <input variable="bil1"/>
+            <output expression="&quot;masukkan bil ke-2: &quot;" newline="True"/>
+            <input variable="bil2"/>
+            <output expression="&quot;Masukkan bil ke-3: &quot;" newline="True"/>
+            <input variable="bil3"/>
+            <if expression="bil1 &gt; bil2">
+                <then>
+                    <if expression="bil2 &gt; bil3">
+                        <then>
+                            <assign variable="mid" expression="bil2"/>
+                        </then>
+                        <else>
+                            <if expression="bil1 &gt; bil3">
+                                <then>
+                                    <assign variable="mid" expression="bil3"/>
+                                </then>
+                                <else>
+                                    <assign variable="mid" expression="bil1"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="bil1 &gt; bil3">
+                        <then>
+                            <assign variable="mid" expression="bil1"/>
+                        </then>
+                        <else>
+                            <if expression="bil2 &gt; bil3">
+                                <then>
+                                    <assign variable="mid" expression="bil3"/>
+                                </then>
+                                <else>
+                                    <assign variable="mid" expression="bil2"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Bilangan dengan nilai tengah: &quot; &amp; mid" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

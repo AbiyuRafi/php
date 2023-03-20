@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-08 08:47:16 AM"/>
+        <attribute name="created" value="QVNVUztNVVJUSURFV0lPS1RBVkk7MjAyMy0wMy0wODswODo0MTo0MiBBTTsyNzQy"/>
+        <attribute name="edited" value="QVNVUztNVVJUSURFV0lPS1RBVkk7MjAyMy0wMy0wODswODo0NzoxNiBBTTsxOzI4NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukan panjang sisi&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a=b&amp;&amp;b=c">
+                <then>
+                    <output expression="&quot;sama sisi&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a=b||a=c&amp;&amp;b=c">
+                        <then>
+                            <output expression="&quot;sama kaki&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a!=b&amp;&amp;a!=c&amp;&amp;b!=c">
+                                <then>
+                                    <output expression="&quot;sembarang&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
